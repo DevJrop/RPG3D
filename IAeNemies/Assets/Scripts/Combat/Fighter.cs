@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
-using Core;
+﻿using Core;
 using Movement;
 using UnityEngine;
 
@@ -12,6 +8,8 @@ namespace Combat
     {
         [SerializeField] float weaponRange = 2f;
         [SerializeField] float timeBetweenAttacks = 1f;
+        [SerializeField] float weaponDamage = 5f;
+        
         private float timeSinceLastAttack = 0;
         private Transform target;
         private void Update()
@@ -28,16 +26,23 @@ namespace Combat
                 AttackBehaviour();
             }
         }
-
         private void AttackBehaviour()
         {
             if (timeSinceLastAttack > timeBetweenAttacks)
             {
+                // This will trigger the Hit() event.
                 GetComponent<Animator>().SetTrigger("attack");
                 timeSinceLastAttack = 0;
+                Hit();
+                
             }
         }
-
+        // Animation Event
+        void Hit()
+        {
+            Health healthComponent = target.GetComponent<Health>();
+            healthComponent.TakeDamage(weaponDamage);
+        }
         private bool GetIsInRange()
         {
             return Vector3.Distance(transform.position, target.position) < weaponRange;
@@ -47,11 +52,6 @@ namespace Combat
         {
             GetComponent<ActionScheduler>().StartAction(this);
             target = combatTarget.transform;
-        }
-
-        public void Hit()
-        {
-            
         }
         public void Cancel()
         {

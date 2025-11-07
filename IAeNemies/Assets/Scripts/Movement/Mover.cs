@@ -8,14 +8,16 @@ namespace Movement
     {
         [SerializeField] Transform target;
         private NavMeshAgent navMeshAgent;
+        Health health;
 
         private void Start()
         {
+            health = GetComponent<Health>();
             navMeshAgent = GetComponent<NavMeshAgent>();
         }
         void Update()
         {
-            
+            navMeshAgent.enabled = !health.IsDead();
             UpdateAnimator();
         }
 

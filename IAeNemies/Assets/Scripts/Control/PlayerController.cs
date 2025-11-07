@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Combat;
+using Core;
 using Movement;
 using UnityEngine;
 
@@ -10,9 +11,16 @@ namespace Control
 {
     public class PlayerController : MonoBehaviour
     {
-        
+        Health health;
+
+        private void Start()
+        {
+            health = GetComponent<Health>();
+        }
+
         private void Update()
         {
+            if (health.IsDead())return ;
             if (InteractWithCombat())return;
             if(InteractWithMovement())return;
         }

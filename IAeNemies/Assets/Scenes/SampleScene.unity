@@ -1435,7 +1435,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -3601290168922206584, guid: 98c1c0d770104394193214a28cc58fd0, type: 3}
       propertyPath: chaseDistance
-      value: 10
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 493206594145118964, guid: 98c1c0d770104394193214a28cc58fd0, type: 3}
+      propertyPath: healthPoints
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3764279923978706343, guid: 98c1c0d770104394193214a28cc58fd0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2884,9 +2888,13 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3601290168922206584, guid: 98c1c0d770104394193214a28cc58fd0, type: 3}
+      propertyPath: chaseDistance
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 493206594145118964, guid: 98c1c0d770104394193214a28cc58fd0, type: 3}
       propertyPath: healthPoints
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3764279923978706343, guid: 98c1c0d770104394193214a28cc58fd0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7719,9 +7727,13 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3601290168922206584, guid: 98c1c0d770104394193214a28cc58fd0, type: 3}
+      propertyPath: chaseDistance
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 493206594145118964, guid: 98c1c0d770104394193214a28cc58fd0, type: 3}
       propertyPath: healthPoints
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3764279923978706343, guid: 98c1c0d770104394193214a28cc58fd0, type: 3}
       propertyPath: m_LocalPosition.x

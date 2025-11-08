@@ -76,11 +76,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -75509600174827569, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
       propertyPath: healthPoints
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1310186297687945206, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
       propertyPath: target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368411966789933343, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+      propertyPath: weaponDamage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368411966789933343, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: 3837402756167851688, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
       propertyPath: m_Name

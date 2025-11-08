@@ -16,6 +16,10 @@ GameObject:
   - component: {fileID: 6598419025036473370}
   - component: {fileID: 4815537712885411170}
   - component: {fileID: -75509600174827569}
+  - component: {fileID: 1297034462984468113}
+  - component: {fileID: 8244134231780443697}
+  - component: {fileID: 7176338986252569812}
+  - component: {fileID: 427619228719264558}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -98,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45717f14ae867ad4eb428520bc94de90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mover
-  target: {fileID: 5482829108552818844}
+  target: {fileID: 0}
 --- !u!95 &3731077628570372265
 Animator:
   serializedVersion: 7
@@ -182,4 +186,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17c49a78c4145ddbeb580dc1b4a80cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Combat.Health
-  health: 100
+  healthPoints: 20
+--- !u!114 &1297034462984468113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3837402756167851688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a188d55bb77a7914490ae29cf026b95c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Combat.CombatTarget
+--- !u!136 &8244134231780443697
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3837402756167851688}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.48676658
+  m_Height: 2.2384071
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &7176338986252569812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3837402756167851688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8076dcc996f6a144b855af9ccfa1427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::IAController
+  chaseDistance: 5
+  suspiciusTime: 3
+--- !u!114 &427619228719264558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3837402756167851688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a188d55bb77a7914490ae29cf026b95c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Combat.CombatTarget

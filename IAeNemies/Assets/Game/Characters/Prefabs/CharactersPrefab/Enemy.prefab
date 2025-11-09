@@ -82,6 +82,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1310186297687945206, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+      propertyPath: maxSpeed
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2368411966789933343, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
       propertyPath: weaponDamage
       value: 3
@@ -138,8 +142,13 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7176338986252569812, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+      propertyPath: chaseDistance
+      value: 6.5
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 427619228719264558, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+    - {fileID: 8244134231780443697, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5482829108552818844, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
@@ -147,7 +156,7 @@ PrefabInstance:
       addedObject: {fileID: 5457672822293192232}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3837402756167851688, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
-      insertIndex: -1
+      insertIndex: 3
       addedObject: {fileID: -9190908638390831443}
   m_SourcePrefab: {fileID: 100100000, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
 --- !u!4 &3764279923978706343 stripped

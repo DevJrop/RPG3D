@@ -10,14 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 5482829108552818844}
   - component: {fileID: 7152397801117226387}
-  - component: {fileID: 1310186297687945206}
   - component: {fileID: 3731077628570372265}
-  - component: {fileID: 2368411966789933343}
   - component: {fileID: 6598419025036473370}
+  - component: {fileID: 8244134231780443697}
+  - component: {fileID: 2368411966789933343}
+  - component: {fileID: 1310186297687945206}
   - component: {fileID: 4815537712885411170}
   - component: {fileID: -75509600174827569}
   - component: {fileID: 1297034462984468113}
-  - component: {fileID: 8244134231780443697}
   - component: {fileID: 7176338986252569812}
   - component: {fileID: 427619228719264558}
   m_Layer: 0
@@ -90,19 +90,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1310186297687945206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3837402756167851688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45717f14ae867ad4eb428520bc94de90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Mover
-  target: {fileID: 0}
 --- !u!95 &3731077628570372265
 Animator:
   serializedVersion: 7
@@ -125,21 +112,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2368411966789933343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3837402756167851688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 690854ff6abd4ca585b7af85fa7e6045, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Combat.Fighter
-  weaponRange: 2
-  timeBetweenAttacks: 1
-  weaponDamage: 5
 --- !u!195 &6598419025036473370
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -162,6 +134,57 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!136 &8244134231780443697
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3837402756167851688}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.48676658
+  m_Height: 2.2384071
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &2368411966789933343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3837402756167851688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 690854ff6abd4ca585b7af85fa7e6045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Combat.Fighter
+  weaponRange: 2
+  timeBetweenAttacks: 1
+  weaponDamage: 5
+--- !u!114 &1310186297687945206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3837402756167851688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45717f14ae867ad4eb428520bc94de90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Mover
+  target: {fileID: 0}
 --- !u!114 &4815537712885411170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,29 +222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a188d55bb77a7914490ae29cf026b95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Combat.CombatTarget
---- !u!136 &8244134231780443697
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3837402756167851688}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.48676658
-  m_Height: 2.2384071
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &7176338986252569812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,6 +236,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::IAController
   chaseDistance: 5
   suspiciusTime: 3
+  waypointTolerance: 1
+  wayPointDwellTime: 2
+  patrolPath: {fileID: 0}
 --- !u!114 &427619228719264558
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class IAController : MonoBehaviour
     [SerializeField] private float suspiciusTime;
     [SerializeField] private float waypointTolerance = 1f;
     [SerializeField] private float wayPointDwellTime = 2f;
+    [Range(0,1)][SerializeField] private float patrolSpeedFraction = 0.2f;
     Fighter fighter;
     GameObject player;
     Health health;
@@ -72,7 +73,7 @@ public class IAController : MonoBehaviour
 
         if (timeSinceArrivedAtWaypoint > wayPointDwellTime)
         {
-            mover.StartMoveAction(nextPosition);
+            mover.StartMoveAction(nextPosition, patrolSpeedFraction);
         }
         
     }

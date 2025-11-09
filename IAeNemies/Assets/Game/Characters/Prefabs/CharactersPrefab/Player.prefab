@@ -71,6 +71,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7176338986252569812, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
     - {fileID: 427619228719264558, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+    - {fileID: 1297034462984468113, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5482829108552818844, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
@@ -80,9 +81,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3837402756167851688, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
       insertIndex: -1
       addedObject: {fileID: -1168278512345340420}
-    - targetCorrespondingSourceObject: {fileID: 3837402756167851688, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6031337815506328046}
   m_SourcePrefab: {fileID: 100100000, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
 --- !u!1 &4500638069554820853 stripped
 GameObject:
@@ -101,18 +99,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 441f3e18042d47b8be778b11241a7a6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Control.PlayerController
---- !u!114 &6031337815506328046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4500638069554820853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a188d55bb77a7914490ae29cf026b95c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Combat.CombatTarget
 --- !u!4 &5125842967300475073 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5482829108552818844, guid: 011bf576784804848af66b22b4bc94fe, type: 3}

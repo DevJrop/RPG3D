@@ -69,9 +69,15 @@ namespace Combat
         }
         public void Cancel()
         {
+            StopAttack();
+            GetComponent<Mover>().Cancel();
+            target = null;
+        }
+
+        private void StopAttack()
+        {
             GetComponent<Animator>().ResetTrigger("attack");
             GetComponent<Animator>().SetTrigger("stopAttack");
-            target = null;
         }
 
     }

@@ -2,15 +2,15 @@
 using Core;
 using Movement;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Combat
 {
     public class Fighter:MonoBehaviour, IAction
     {
-        [SerializeField] float weaponRange = 2f;
         [SerializeField] float timeBetweenAttacks = 1f;
-        [SerializeField] float weaponDamage = 5f;
-        [SerializeField] private Transform handTransform;
+        [SerializeField] private Transform rightHandTransform;
+        [SerializeField] private Transform leftHandTransform;
         [SerializeField] Weapon weapon = null;
         private float timeSinceLastAttack = Mathf.Infinity;
         Health target;
@@ -40,7 +40,7 @@ namespace Combat
         {
             if (weapon == null) return;
             Animator animator = GetComponent<Animator>();
-            weapon.Spawn(handTransform, animator);
+            weapon.Spawn(rightHandTransform, leftHandTransform, animator);
         }
         private void AttackBehaviour()
         {
@@ -62,11 +62,11 @@ namespace Combat
         void Hit()
         {
             if (target == null) return;
-            target.TakeDamage(weaponDamage);
+            target.TakeDamage(weapon.GetDamage());
         }
         private bool GetIsInRange()
         {
-            return Vector3.Distance(transform.position, target.transform.position) < weaponRange;
+            return Vector3.Distance(transform.position, target.transform.position) < weapon.GetRange();
             
         }
         

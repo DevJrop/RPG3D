@@ -67,6 +67,14 @@ PrefabInstance:
       propertyPath: handTransform
       value: 
       objectReference: {fileID: 8051965864462781962}
+    - target: {fileID: 2368411966789933343, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+      propertyPath: leftHandTransform
+      value: 
+      objectReference: {fileID: 3453548013657624098}
+    - target: {fileID: 2368411966789933343, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+      propertyPath: rightHandTransform
+      value: 
+      objectReference: {fileID: 8051965864462781962}
     - target: {fileID: 3837402756167851688, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
       propertyPath: m_Name
       value: Player
@@ -647,6 +655,11 @@ PrefabInstance:
       addedObject: {fileID: 1895102918215279196}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c85442c2da241614d82f370d1cdffd71, type: 3}
+--- !u!4 &3453548013657624098 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4361254235543792588, guid: c85442c2da241614d82f370d1cdffd71, type: 3}
+  m_PrefabInstance: {fileID: 7824091757300095510}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7718739313874337277 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c85442c2da241614d82f370d1cdffd71, type: 3}

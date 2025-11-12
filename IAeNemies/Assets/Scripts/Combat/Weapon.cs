@@ -6,10 +6,34 @@ public class Weapon : ScriptableObject
 {
     [SerializeField] AnimatorOverrideController animatorOverride = null;
     [SerializeField] private GameObject weaponPrefab;
+    [SerializeField] float weaponRange = 2f;
+    [SerializeField] float weaponDamage = 5f;
+    [SerializeField] private bool isRightHanded = true;
 
-    public void Spawn(Transform handTransform, Animator animator)
+    public void Spawn(Transform rightHand, Transform leftHand, Animator animator)
     {
-        Instantiate(weaponPrefab, handTransform);
-        animator.runtimeAnimatorController = animatorOverride;
+        if (weaponPrefab != null)
+        {
+            Transform handTransform;
+            if (isRightHanded) handTransform = rightHand;
+            else handTransform = leftHand;
+            Instantiate(weaponPrefab, handTransform);
+        }
+
+        if (animatorOverride != null)
+        {
+            animator.runtimeAnimatorController = animatorOverride;
+        }
+        
+    }
+
+    public float GetDamage()
+    {
+        return weaponDamage;
+    }
+    
+    public float GetRange()
+    {
+        return weaponRange;
     }
 }

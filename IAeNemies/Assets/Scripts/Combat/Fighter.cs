@@ -1,4 +1,5 @@
-﻿using Core;
+﻿using System;
+using Core;
 using Movement;
 using UnityEngine;
 
@@ -9,9 +10,18 @@ namespace Combat
         [SerializeField] float weaponRange = 2f;
         [SerializeField] float timeBetweenAttacks = 1f;
         [SerializeField] float weaponDamage = 5f;
-        
+        [SerializeField] private GameObject weaponPrefab;
+        [SerializeField] private Transform handTransform;
+        [SerializeField] AnimatorOverrideController weaponOverride = null;
         private float timeSinceLastAttack = Mathf.Infinity;
         Health target;
+
+        private void Start()
+        {
+            SpawnWeapon();
+        }
+
+
         private void Update()
         {
             timeSinceLastAttack += Time.deltaTime;
@@ -26,6 +36,12 @@ namespace Combat
                 GetComponent<Mover>().Cancel();
                 AttackBehaviour();
             }
+        }
+        private void SpawnWeapon()
+        {
+            Instantiate(weaponPrefab, handTransform);
+            Animator animator = GetComponent<Animator>();
+            animator.runtimeAnimatorController = weaponOverride;
         }
         private void AttackBehaviour()
         {

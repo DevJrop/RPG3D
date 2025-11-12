@@ -47,6 +47,5 @@ namespace Movement
             GetComponent<Animator>().SetFloat("forwardSpeed", speed);
         }
 
-        
     }
 }

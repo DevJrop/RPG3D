@@ -10,9 +10,8 @@ namespace Combat
         [SerializeField] float weaponRange = 2f;
         [SerializeField] float timeBetweenAttacks = 1f;
         [SerializeField] float weaponDamage = 5f;
-        [SerializeField] private GameObject weaponPrefab;
         [SerializeField] private Transform handTransform;
-        [SerializeField] AnimatorOverrideController weaponOverride = null;
+        [SerializeField] Weapon weapon = null;
         private float timeSinceLastAttack = Mathf.Infinity;
         Health target;
 
@@ -39,9 +38,9 @@ namespace Combat
         }
         private void SpawnWeapon()
         {
-            Instantiate(weaponPrefab, handTransform);
+            if (weapon == null) return;
             Animator animator = GetComponent<Animator>();
-            animator.runtimeAnimatorController = weaponOverride;
+            weapon.Spawn(handTransform, animator);
         }
         private void AttackBehaviour()
         {

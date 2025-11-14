@@ -322,16 +322,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3978984934284628377, guid: f5f4c78561b473f4784932bbb3cb7eb1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 12.81
+      propertyPath: m_LocalRotation.w
+      value: 0.4999996
       objectReference: {fileID: 0}
     - target: {fileID: 3978984934284628377, guid: f5f4c78561b473f4784932bbb3cb7eb1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
+      propertyPath: m_LocalRotation.x
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3978984934284628377, guid: f5f4c78561b473f4784932bbb3cb7eb1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3
+      propertyPath: m_LocalRotation.y
+      value: 0.8660256
+      objectReference: {fileID: 0}
+    - target: {fileID: 3978984934284628377, guid: f5f4c78561b473f4784932bbb3cb7eb1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3978984934284628377, guid: f5f4c78561b473f4784932bbb3cb7eb1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 6987310698170295282, guid: f5f4c78561b473f4784932bbb3cb7eb1, type: 3}
       propertyPath: m_Name

@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace SceneManagment
+namespace SceneManagement
 {
     public class Fade : MonoBehaviour
     {
@@ -14,7 +14,6 @@ namespace SceneManagment
         private void Start()
         {
             canvasGroup = GetComponent<CanvasGroup>();
-            StartCoroutine(FadeOutIn(1f));
         }
 
         IEnumerator FadeOutIn(float time)
@@ -23,7 +22,7 @@ namespace SceneManagment
             yield return FadeIn(3f);
         }
 
-        IEnumerator FadeOut(float time)
+        public IEnumerator FadeOut(float time)
         {
             while (canvasGroup.alpha < 1)
             {
@@ -31,8 +30,8 @@ namespace SceneManagment
                 yield return null;
             }
         }
-        
-        IEnumerator FadeIn(float time)
+
+        public IEnumerator FadeIn(float time)
         {
             while (canvasGroup.alpha > 0)
             {

@@ -1,3 +1,6 @@
+using Combat;
+using Core;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -9,14 +12,13 @@ public class Weapon : ScriptableObject
     [SerializeField] float weaponRange = 2f;
     [SerializeField] float weaponDamage = 5f;
     [SerializeField] private bool isRightHanded = true;
+    [SerializeField] Arrow projectile;
 
     public void Spawn(Transform rightHand, Transform leftHand, Animator animator)
     {
         if (weaponPrefab != null)
         {
-            Transform handTransform;
-            if (isRightHanded) handTransform = rightHand;
-            else handTransform = leftHand;
+            var handTransform = GetTransform(rightHand, leftHand);
             Instantiate(weaponPrefab, handTransform);
         }
 
@@ -25,6 +27,25 @@ public class Weapon : ScriptableObject
             animator.runtimeAnimatorController = animatorOverride;
         }
         
+    }
+
+    private Transform GetTransform(Transform rightHand, Transform leftHand)
+    {
+        Transform handTransform;
+        if (isRightHanded) handTransform = rightHand;
+        else handTransform = leftHand;
+        return handTransform;
+    }
+
+    public bool HasProjectile()
+    {
+        return projectile != null;
+    }
+
+    public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target)
+    {
+       Arrow projectileInstance = Instantiate(projectile, GetTransform(rightHand, leftHand).position, Quaternion.identity);
+       projectileInstance.SetTarget(target);
     }
 
     public float GetDamage()

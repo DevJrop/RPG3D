@@ -62,7 +62,20 @@ namespace Combat
         void Hit()
         {
             if (target == null) return;
+            if (weapon.HasProjectile())
+            {
+                weapon.LaunchProjectile(rightHandTransform, leftHandTransform, target);
+            }
+            else
+            {
+                target.TakeDamage(weapon.GetDamage());
+            }
             target.TakeDamage(weapon.GetDamage());
+        }
+
+        void Shoot()
+        {
+            Hit();
         }
         private bool GetIsInRange()
         {

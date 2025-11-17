@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6efaa8c4cc544584c8add70673ba36af, type: 3}
-  m_Name: Bow
+  m_Name: Bow 1
   m_EditorClassIdentifier: Assembly-CSharp::Weapon
   animatorOverride: {fileID: 22100000, guid: 26fb0608d28dbd04b8781134f3933305, type: 2}
-  weaponPrefab: {fileID: 2964194033143101666, guid: 78750cb1b9a12ff4085704a36de59213, type: 3}
+  weaponPrefab: {fileID: 8603269689354030320, guid: 7aebe1642d1b94b4ba46ed0b694c2251, type: 3}
   weaponRange: 13.17
   weaponDamage: 5
   isRightHanded: 0

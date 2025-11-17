@@ -45,7 +45,7 @@ public class Weapon : ScriptableObject
     public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target)
     {
        Arrow projectileInstance = Instantiate(projectile, GetTransform(rightHand, leftHand).position, Quaternion.identity);
-       projectileInstance.SetTarget(target);
+       projectileInstance.SetTarget(target, weaponDamage);
     }
 
     public float GetDamage()

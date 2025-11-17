@@ -9,5 +9,5 @@ AnimatorOverrideController:
   m_Name: Bow Animator Override
   m_Controller: {fileID: 9100000, guid: 959612ac76c26c9419fbe733e60f73d0, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 4043807988371827432, guid: b3f5243b8d0359e49886637d03851f3e, type: 3}
-    m_OverrideClip: {fileID: 7400000, guid: 20200c22993e75c4ab6fe29512db3e8c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 2fa555ecf977d814a9e63ce652e7e508, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 17eb30f13e31fb247a4b7db5519f3d4a, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Weapon
   animatorOverride: {fileID: 22100000, guid: 26fb0608d28dbd04b8781134f3933305, type: 2}
   weaponPrefab: {fileID: 8603269689354030320, guid: 7aebe1642d1b94b4ba46ed0b694c2251, type: 3}
-  weaponRange: 13.17
-  weaponDamage: 5
+  weaponRange: 20.4
+  weaponDamage: 3
   isRightHanded: 0
-  projectile: {fileID: 2208959196801289859, guid: 8eec58c1713f2ff46aae2140a0ef19d7, type: 3}
+  projectile: {fileID: 5089757289835058292, guid: d8af0a8ac4c7988468e77facc8b4094b, type: 3}

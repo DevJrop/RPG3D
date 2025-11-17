@@ -9,8 +9,8 @@ public class Weapon : ScriptableObject
 {
     [SerializeField] AnimatorOverrideController animatorOverride = null;
     [SerializeField] private GameObject weaponPrefab;
-    [SerializeField] float weaponRange = 2f;
-    [SerializeField] float weaponDamage = 5f;
+    [SerializeField] float weaponRange = 1f;
+    [SerializeField] float weaponDamage = 1f;
     [SerializeField] private bool isRightHanded = true;
     [SerializeField] Arrow projectile;
 
@@ -57,4 +57,6 @@ public class Weapon : ScriptableObject
     {
         return weaponRange;
     }
+    
+    
 }

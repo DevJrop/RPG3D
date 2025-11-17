@@ -54,7 +54,7 @@ PrefabInstance:
     - target: {fileID: 2368411966789933343, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
       propertyPath: weapon
       value: 
-      objectReference: {fileID: 11400000, guid: 2c1ba7188d6bb98479930aed30a89f0b, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 2368411966789933343, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
       propertyPath: weaponRange
       value: 2.87
@@ -125,7 +125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8244134231780443697, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7176338986252569812, guid: 011bf576784804848af66b22b4bc94fe, type: 3}

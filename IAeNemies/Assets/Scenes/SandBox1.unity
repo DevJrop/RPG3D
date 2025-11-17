@@ -1194,6 +1194,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1252960486}
     m_Modifications:
+    - target: {fileID: -9190908638390831443, guid: 98c1c0d770104394193214a28cc58fd0, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1998752619040600559, guid: 98c1c0d770104394193214a28cc58fd0, type: 3}
       propertyPath: patrolPath
       value: 
@@ -5748,6 +5752,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyArcher
       objectReference: {fileID: 0}
+    - target: {fileID: 1769910031150184369, guid: cedea69e6d3c8f84bb80bd8a48de5aac, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 6613196992338731642, guid: cedea69e6d3c8f84bb80bd8a48de5aac, type: 3}
+      propertyPath: chaseDistance
+      value: 23
+      objectReference: {fileID: 0}
     - target: {fileID: 8378768912994618930, guid: cedea69e6d3c8f84bb80bd8a48de5aac, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.460975
@@ -10076,15 +10088,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6207267980459363629, guid: 0e1a1478c32ceed4299971727968e248, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.788164
+      value: -7.791103
       objectReference: {fileID: 0}
     - target: {fileID: 6207267980459363629, guid: 0e1a1478c32ceed4299971727968e248, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.041431
+      value: 17.041424
       objectReference: {fileID: 0}
     - target: {fileID: 6207267980459363629, guid: 0e1a1478c32ceed4299971727968e248, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -39.02729
+      value: -39.02723
       objectReference: {fileID: 0}
     - target: {fileID: 6283869520343564096, guid: 0e1a1478c32ceed4299971727968e248, type: 3}
       propertyPath: m_LocalRotation.w

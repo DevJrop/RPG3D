@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1687229378477010153
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2879528184502708999, guid: a27a389183a37464bbe9e7e5c2c81212, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 4189
+      objectReference: {fileID: 0}
+    - target: {fileID: 5189694204264472984, guid: a27a389183a37464bbe9e7e5c2c81212, type: 3}
+      propertyPath: lengthInSec
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5189694204264472984, guid: a27a389183a37464bbe9e7e5c2c81212, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 157
+      objectReference: {fileID: 0}
+    - target: {fileID: 5189694204264472984, guid: a27a389183a37464bbe9e7e5c2c81212, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].time
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5630187145158137927, guid: a27a389183a37464bbe9e7e5c2c81212, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5630187145158137927, guid: a27a389183a37464bbe9e7e5c2c81212, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5630187145158137927, guid: a27a389183a37464bbe9e7e5c2c81212, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5630187145158137927, guid: a27a389183a37464bbe9e7e5c2c81212, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5630187145158137927, guid: a27a389183a37464bbe9e7e5c2c81212, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5630187145158137927, guid: a27a389183a37464bbe9e7e5c2c81212, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5630187145158137927, guid: a27a389183a37464bbe9e7e5c2c81212, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5630187145158137927, guid: a27a389183a37464bbe9e7e5c2c81212, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5630187145158137927, guid: a27a389183a37464bbe9e7e5c2c81212, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5630187145158137927, guid: a27a389183a37464bbe9e7e5c2c81212, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004541042819060168, guid: a27a389183a37464bbe9e7e5c2c81212, type: 3}
+      propertyPath: m_Name
+      value: ExplosionFireball
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8004541042819060168, guid: a27a389183a37464bbe9e7e5c2c81212, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4947101876401372802}
+  m_SourcePrefab: {fileID: 100100000, guid: a27a389183a37464bbe9e7e5c2c81212, type: 3}
+--- !u!1 &8682915364200938785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8004541042819060168, guid: a27a389183a37464bbe9e7e5c2c81212, type: 3}
+  m_PrefabInstance: {fileID: 1687229378477010153}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4947101876401372802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8682915364200938785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9abf03ca73df730458c873a2713328a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Core.DestroyAfterEffect

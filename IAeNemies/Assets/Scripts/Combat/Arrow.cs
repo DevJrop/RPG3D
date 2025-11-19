@@ -10,6 +10,7 @@ namespace Combat
         float damage = 0f;
         [SerializeField] private float speed = 1;
         [SerializeField] private bool isHoming = true;
+        [SerializeField] private GameObject hitEffect = null;
 
         private void Start()
         {
@@ -48,6 +49,11 @@ namespace Combat
             if (other.GetComponent<Health>() != target) return;
             if (target.IsDead()) return;
             target.TakeDamage(damage);
+            if (hitEffect != null)
+            {
+                Instantiate(hitEffect, GetAimLocation(), Quaternion.identity); 
+            }
+            
             Destroy(gameObject);
             
         }

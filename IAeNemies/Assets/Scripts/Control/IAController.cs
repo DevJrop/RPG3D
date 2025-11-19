@@ -2,6 +2,7 @@ using System;
 using Combat;
 using Core;
 using Movement;
+using Recourses;
 using UnityEngine;
 using UnityEngine.Serialization;
 

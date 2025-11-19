@@ -1,5 +1,6 @@
 using System;
 using Core;
+using Recourses;
 using UnityEngine;
 
 namespace Combat
@@ -11,6 +12,8 @@ namespace Combat
         [SerializeField] private float speed = 1;
         [SerializeField] private bool isHoming = true;
         [SerializeField] private GameObject hitEffect = null;
+        [SerializeField] private float maxLifeTime = 3f;
+        
 
         private void Start()
         {
@@ -32,6 +35,7 @@ namespace Combat
         {
             this.target = target;
             this.damage = damage;
+            Destroy(gameObject, maxLifeTime);
         }
 
         private Vector3 GetAimLocation()

@@ -1,12 +1,18 @@
-﻿using Movement;
+﻿using Core;
+using Stats;
 using UnityEngine;
 
-namespace Core
+namespace Recourses
 {
     public class Health : MonoBehaviour
     {
         [SerializeField] float healthPoints = 100f;
         bool isDead = false;
+
+        private void Start()
+        {
+            healthPoints = GetComponent<BaseStats>().GetHealth();
+        }
 
         public bool IsDead()
         {
@@ -19,6 +25,11 @@ namespace Core
             {
                 Die();
             }
+        }
+
+        public float GetPercentage()
+        {
+            return healthPoints / GetComponent<BaseStats>().GetHealth();
         }
 
         private void Die()

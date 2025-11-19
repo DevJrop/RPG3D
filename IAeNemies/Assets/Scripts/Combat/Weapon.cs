@@ -1,5 +1,6 @@
 using Combat;
 using Core;
+using Recourses;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;

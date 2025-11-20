@@ -10,5 +10,10 @@ namespace Recourses
         {
             experiencePoints += experience;
         }
+
+        public float GetPoints()
+        {
+            return experiencePoints;
+        }
     }
 }

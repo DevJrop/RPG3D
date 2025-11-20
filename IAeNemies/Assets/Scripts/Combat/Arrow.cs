@@ -13,7 +13,7 @@ namespace Combat
         [SerializeField] private bool isHoming = true;
         [SerializeField] private GameObject hitEffect = null;
         [SerializeField] private float maxLifeTime = 3f;
-        
+        GameObject instigator = null;
 
         private void Start()
         {
@@ -31,10 +31,11 @@ namespace Combat
             transform.Translate(Vector3.forward * speed * Time.deltaTime);
         }
 
-        public void SetTarget(Health target, float damage)
+        public void SetTarget(Health target,GameObject instigator, float damage)
         {
             this.target = target;
             this.damage = damage;
+            this.instigator = instigator;
             Destroy(gameObject, maxLifeTime);
         }
 
@@ -52,7 +53,7 @@ namespace Combat
         {
             if (other.GetComponent<Health>() != target) return;
             if (target.IsDead()) return;
-            target.TakeDamage(damage);
+            target.TakeDamage(instigator,damage);
             if (hitEffect != null)
             {
                 Instantiate(hitEffect, GetAimLocation(), Quaternion.identity); 

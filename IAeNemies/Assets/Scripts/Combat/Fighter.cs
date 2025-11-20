@@ -43,6 +43,11 @@ namespace Combat
             Animator animator = GetComponent<Animator>();
             weapon.Spawn(rightHandTransform, leftHandTransform, animator);
         }
+
+        public Health GetTarget()
+        {
+            return target;
+        }
         private void AttackBehaviour()
         {
             transform.LookAt(target.transform);
@@ -65,13 +70,13 @@ namespace Combat
             if (target == null) return;
             if (weapon.HasProjectile())
             {
-                weapon.LaunchProjectile(rightHandTransform, leftHandTransform, target);
+                weapon.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject);
             }
             else
             {
-                target.TakeDamage(weapon.GetDamage());
+                target.TakeDamage(gameObject, weapon.GetDamage());
             }
-            target.TakeDamage(weapon.GetDamage());
+            
         }
 
         void Shoot()

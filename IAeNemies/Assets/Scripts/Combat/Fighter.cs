@@ -1,4 +1,5 @@
 ﻿using System;
+using ConfigStats;
 using Core;
 using Movement;
 using Recourses;
@@ -68,13 +69,16 @@ namespace Combat
         void Hit()
         {
             if (target == null) return;
+            
+            var damage = GetComponent<BaseStats>().GetStat(Stat.Damage);
+            
             if (weapon.HasProjectile())
             {
-                weapon.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject);
+                weapon.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject, damage);
             }
             else
             {
-                target.TakeDamage(gameObject, weapon.GetDamage());
+                target.TakeDamage(gameObject, damage);
             }
             
         }

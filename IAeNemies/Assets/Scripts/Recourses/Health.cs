@@ -6,12 +6,23 @@ namespace Recourses
 {
     public class Health : MonoBehaviour
     {
-        [SerializeField] float healthPoints = 100f;
+        [SerializeField] private float regenerationPercentage = 70;
+        float healthPoints = -1f;
         bool isDead = false;
 
         private void Start()
         {
-            healthPoints = GetComponent<BaseStats>().GetStat(Stat.Health);
+            GetComponent<BaseStats>().onLevelUp += RegenerateHealth;
+            if (healthPoints < 0)
+            {
+               healthPoints = GetComponent<BaseStats>().GetStat(Stat.Health);
+            }
+        }
+
+        private void RegenerateHealth()
+        {
+            float regenHealthPoints = GetComponent<BaseStats>().GetStat(Stat.Health) * regenerationPercentage / 100f;
+            healthPoints = Mathf.Max(healthPoints, regenHealthPoints);
         }
 
         public bool IsDead()
@@ -20,12 +31,23 @@ namespace Recourses
         }
         public void TakeDamage(GameObject instigator, float damage)
         {
+            print(gameObject.name + " took damage: " + damage);
             healthPoints = Mathf.Max(healthPoints - damage, 0);
             if (healthPoints == 0)
             {
                 Die();
                 AwardExperience(instigator);
             }
+        }
+
+        public float GetHEalthPoints()
+        {
+            return healthPoints;
+        }
+
+        public float GetMaxHealthPoints()
+        {
+            return GetComponent<BaseStats>().GetStat(Stat.Health);
         }
 
         private void AwardExperience(GameObject instigator)

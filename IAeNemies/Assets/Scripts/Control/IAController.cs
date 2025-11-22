@@ -23,12 +23,16 @@ public class IAController : MonoBehaviour
     int currentWaypointIndex = 0;
     Vector3 guardPosition;
 
-    private void Start()
+    private void Awake()
     {
         mover = GetComponent<Mover>();
         fighter = GetComponent<Fighter>();
         health = GetComponent<Health>();
         player = GameObject.FindGameObjectWithTag("Player");
+    }
+
+    private void Start()
+    {
         guardPosition = transform.position;
     }
 

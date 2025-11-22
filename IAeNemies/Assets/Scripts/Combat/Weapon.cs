@@ -12,6 +12,7 @@ public class Weapon : ScriptableObject
     [SerializeField] private GameObject weaponPrefab;
     [SerializeField] float weaponRange = 1f;
     [SerializeField] float weaponDamage = 1f;
+    [SerializeField] float percentageBonus = 0f;
     [SerializeField] private bool isRightHanded = true;
     [SerializeField] Arrow projectile;
 
@@ -53,7 +54,11 @@ public class Weapon : ScriptableObject
     {
         return weaponDamage;
     }
-    
+
+    public float GetPercentageBonus()
+    {
+        return percentageBonus;
+    }
     public float GetRange()
     {
         return weaponRange;

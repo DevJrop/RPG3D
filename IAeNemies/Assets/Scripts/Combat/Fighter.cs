@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using ConfigStats;
 using Core;
 using Movement;
@@ -8,7 +9,7 @@ using UnityEngine.Serialization;
 
 namespace Combat
 {
-    public class Fighter:MonoBehaviour, IAction
+    public class Fighter:MonoBehaviour, IAction, IModifierProvider
     {
         [SerializeField] float timeBetweenAttacks = 1f;
         [SerializeField] private Transform rightHandTransform;
@@ -118,5 +119,20 @@ namespace Combat
             GetComponent<Animator>().SetTrigger("stopAttack");
         }
 
+        public IEnumerable<float> GetAdditiveModifiers(Stat stat)
+        {
+            if (stat == Stat.Damage)
+            {
+                yield return weapon.GetDamage();
+            }
+        }
+
+        public IEnumerable<float> GetPercentageModifiers(Stat stat)
+        {
+            if (stat == Stat.Damage)
+            {
+                yield return weapon.GetPercentageBonus();
+            }
+        }
     }
 }

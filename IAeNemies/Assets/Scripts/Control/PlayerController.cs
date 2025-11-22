@@ -7,12 +7,32 @@ using Core;
 using Movement;
 using Recourses;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Control
 {
     public class PlayerController : MonoBehaviour
     {
         Health health;
+
+        enum CursorType
+        {
+            None,
+            Movement,
+            Combat,
+            UI,
+            
+        }
+
+        [System.Serializable]
+        struct CursorMapping
+        {
+            public CursorType type;
+            public Texture2D texture;
+            public Vector2 hotspot;
+        }
+
+        [SerializeField] private CursorMapping[] cursorMappings = null;
 
         private void Start()
         {
@@ -21,9 +41,25 @@ namespace Control
 
         private void Update()
         {
-            if (health.IsDead())return ;
+            if (InteractWithUI()) return;
+            if (health.IsDead())
+            {
+                SetCursor(CursorType.None);
+                return;
+            }
             if (InteractWithCombat())return;
             if(InteractWithMovement())return;
+            
+        }
+
+        private bool InteractWithUI()
+        {
+            if (EventSystem.current.IsPointerOverGameObject())
+            {
+                SetCursor(CursorType.UI);
+                return true;
+            } 
+            return false;
         }
 
         private bool InteractWithCombat()
@@ -45,10 +81,30 @@ namespace Control
                 {
                     GetComponent<Fighter>().Attack(target.gameObject);
                 }
+
+                SetCursor(CursorType.Combat);
                 return true;
             }
 
             return false;
+        }
+
+        private CursorMapping GetCursorMappings(CursorType type)
+        {
+            foreach (CursorMapping mapping in cursorMappings)
+            {
+                if (mapping.type == type)
+                {
+                    return mapping;
+                }
+            }
+            return cursorMappings[0];
+        }
+
+        private void SetCursor(CursorType type)
+        {
+            CursorMapping mapping = GetCursorMappings(type);
+            Cursor.SetCursor(mapping.texture, mapping.hotspot, CursorMode.Auto);
         }
 
         private bool InteractWithMovement()
@@ -62,6 +118,7 @@ namespace Control
                 {
                     GetComponent<Mover>().StartMoveAction(hit.point, 1f);  
                 }
+                SetCursor(CursorType.Movement);
                 return true;
             }
             return false;

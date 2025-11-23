@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1353782277753096570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7149535681421355757}
+  m_Layer: 0
+  m_Name: RooTree (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7149535681421355757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353782277753096570}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 51.30506, y: 7.52779, z: 32.67703}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4404304170743703899}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3274884283968188401
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7149535681421355757}
+    m_Modifications:
+    - target: {fileID: 1183745940798686890, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 33.2268
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183745940798686890, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.9565096
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183745940798686890, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.880539
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183745940798686890, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183745940798686890, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183745940798686890, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183745940798686890, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183745940798686890, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183745940798686890, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183745940798686890, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956341272976137232, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
+      propertyPath: m_Name
+      value: Tree_1_C_Color1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
+--- !u!4 &4404304170743703899 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1183745940798686890, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
+  m_PrefabInstance: {fileID: 3274884283968188401}
+  m_PrefabAsset: {fileID: 0}

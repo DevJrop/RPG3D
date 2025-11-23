@@ -45,6 +45,7 @@ namespace ConfigStats
                 lookupTable[progressionClass.characterClass] = statlookupTable;
             }
         }
+        
 
         [System.Serializable]
         class ProgressionCharacterClass

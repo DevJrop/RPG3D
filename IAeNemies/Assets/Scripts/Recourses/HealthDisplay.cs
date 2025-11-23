@@ -15,7 +15,7 @@ namespace Recourses
 
         private void Update()
         {
-            GetComponent<Text>().text = String.Format("{0:0}/{1:0}",health.GetMaxHealthPoints(), health.GetMaxHealthPoints());
+            GetComponent<Text>().text = String.Format("{0:0}/{1:0}",health.GetPercentage(), health.GetMaxHealthPoints());
         }
     }
 }

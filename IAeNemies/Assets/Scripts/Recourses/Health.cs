@@ -1,4 +1,5 @@
-﻿using ConfigStats;
+﻿using System;
+using ConfigStats;
 using Core;
 using UnityEngine;
 
@@ -40,7 +41,17 @@ namespace Recourses
             }
         }
 
-        public float GetHEalthPoints()
+        private void OnEnable()
+        {
+            GetComponent<BaseStats>().onLevelUp += RegenerateHealth;
+        }
+
+        private void OnDisable()
+        {
+            GetComponent<BaseStats>().onLevelUp -= RegenerateHealth;
+        }
+
+        public float GetHealthPoints()
         {
             return healthPoints;
         }
@@ -71,5 +82,6 @@ namespace Recourses
             GetComponent<Animator>().SetTrigger("die");
             GetComponent<ActionScheduler>().CancelCurrentAction();
         }
+        
     }
 }

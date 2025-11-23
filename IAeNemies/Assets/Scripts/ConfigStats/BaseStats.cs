@@ -31,7 +31,6 @@ namespace ConfigStats
                 experience.onExperienceGained += UpdateLevel;
             }
         }
-
         private void OnEnable()
         {
             if (experience != null)
@@ -114,7 +113,7 @@ namespace ConfigStats
         
         public int CalculateLevel()
         {
-            Experience experience = GetComponent<Experience>();
+            
             if (experience == null) return startingLevel;
             
             

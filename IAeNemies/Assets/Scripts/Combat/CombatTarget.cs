@@ -8,7 +8,7 @@ using UnityEngine;
 namespace Combat
 {
     [RequireComponent(typeof(Health))]
-    public class CombatTarget : MonoBehaviour
+    public class CombatTarget : MonoBehaviour, IRaycastable
     {
         public CursorType GetCursorType()
         {
@@ -23,7 +23,7 @@ namespace Combat
 
             if (Input.GetMouseButton(0))
             {
-                GetComponent<Fighter>().Attack(gameObject);
+                callingController.GetComponent<Fighter>().Attack(gameObject);
             }
             return true;
         }

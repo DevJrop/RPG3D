@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2652083841641252151}
+  - component: {fileID: 364401926574425466}
   m_Layer: 0
   m_Name: RooTree (4)
   m_TagString: Untagged
@@ -32,6 +33,31 @@ Transform:
   - {fileID: 6791940965457151514}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &364401926574425466
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3987837354877325236}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 20
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5623586970721631605}
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1001 &8844228975700282876
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42,15 +68,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2665235116563516390, guid: c6379de2afafa4e4bbbf316d2244545d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30.847435
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2665235116563516390, guid: c6379de2afafa4e4bbbf316d2244545d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.06081
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2665235116563516390, guid: c6379de2afafa4e4bbbf316d2244545d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.310629
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2665235116563516390, guid: c6379de2afafa4e4bbbf316d2244545d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -89,6 +115,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6379de2afafa4e4bbbf316d2244545d, type: 3}
+--- !u!23 &5623586970721631605 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3798783996498129033, guid: c6379de2afafa4e4bbbf316d2244545d, type: 3}
+  m_PrefabInstance: {fileID: 8844228975700282876}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6791940965457151514 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2665235116563516390, guid: c6379de2afafa4e4bbbf316d2244545d, type: 3}

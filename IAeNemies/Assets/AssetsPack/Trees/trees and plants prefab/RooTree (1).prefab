@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7149535681421355757}
+  - component: {fileID: -2944783497134917642}
   m_Layer: 0
   m_Name: RooTree (1)
   m_TagString: Untagged
@@ -25,13 +26,38 @@ Transform:
   m_GameObject: {fileID: 1353782277753096570}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.30506, y: 7.52779, z: 32.67703}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4404304170743703899}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &-2944783497134917642
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353782277753096570}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 20
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 3266261546789818932}
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1001 &3274884283968188401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42,15 +68,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1183745940798686890, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.2268
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1183745940798686890, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.9565096
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1183745940798686890, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.880539
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1183745940798686890, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
       propertyPath: m_LocalRotation.w
@@ -89,6 +115,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
+--- !u!23 &3266261546789818932 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 10887870902582725, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}
+  m_PrefabInstance: {fileID: 3274884283968188401}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4404304170743703899 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1183745940798686890, guid: 7946df8580ecdda42a888f02e6cbd187, type: 3}

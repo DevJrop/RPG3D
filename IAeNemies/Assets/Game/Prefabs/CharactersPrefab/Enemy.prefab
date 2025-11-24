@@ -179,7 +179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7176338986252569812, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
       propertyPath: chaseDistance
-      value: 6.5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7176338986252569812, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
       propertyPath: wayPointDwellTime

@@ -1,10 +1,13 @@
 using UnityEngine;
 
-public class CameraFacing : MonoBehaviour
+namespace Core
 {
-    
-    void Update()
+    public class CameraFacing : MonoBehaviour
     {
-        transform.forward = Camera.main.transform.forward; 
+    
+        void Update()
+        {
+            transform.forward = Camera.main.transform.forward; 
+        }
     }
 }

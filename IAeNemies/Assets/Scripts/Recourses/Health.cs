@@ -2,12 +2,14 @@
 using ConfigStats;
 using Core;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Recourses
 {
     public class Health : MonoBehaviour
     {
         [SerializeField] private float regenerationPercentage = 70;
+        [SerializeField] private UnityEvent<float> takeDamage;  
         float healthPoints = -1f;
         bool isDead = false;
 
@@ -34,11 +36,17 @@ namespace Recourses
         {
             print(gameObject.name + " took damage: " + damage);
             healthPoints = Mathf.Max(healthPoints - damage, 0);
+            
             if (healthPoints == 0)
             {
                 Die();
                 AwardExperience(instigator);
             }
+            else
+            {
+                takeDamage.Invoke(damage);
+            }
+            
         }
 
         private void OnEnable()

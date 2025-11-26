@@ -1,5 +1,71 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3725943117728742711
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3764279923978706343}
+    m_Modifications:
+    - target: {fileID: 2479473675065602399, guid: 35f8cacadd2422e41b63a03639c56e0a, type: 3}
+      propertyPath: healthComponent
+      value: 
+      objectReference: {fileID: 493206594145118964}
+    - target: {fileID: 6840783504015977482, guid: 35f8cacadd2422e41b63a03639c56e0a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840783504015977482, guid: 35f8cacadd2422e41b63a03639c56e0a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840783504015977482, guid: 35f8cacadd2422e41b63a03639c56e0a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840783504015977482, guid: 35f8cacadd2422e41b63a03639c56e0a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840783504015977482, guid: 35f8cacadd2422e41b63a03639c56e0a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840783504015977482, guid: 35f8cacadd2422e41b63a03639c56e0a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840783504015977482, guid: 35f8cacadd2422e41b63a03639c56e0a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840783504015977482, guid: 35f8cacadd2422e41b63a03639c56e0a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840783504015977482, guid: 35f8cacadd2422e41b63a03639c56e0a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840783504015977482, guid: 35f8cacadd2422e41b63a03639c56e0a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768104591814367751, guid: 35f8cacadd2422e41b63a03639c56e0a, type: 3}
+      propertyPath: m_Name
+      value: HealthBar
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 35f8cacadd2422e41b63a03639c56e0a, type: 3}
+--- !u!4 &7879731289827381565 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6840783504015977482, guid: 35f8cacadd2422e41b63a03639c56e0a, type: 3}
+  m_PrefabInstance: {fileID: 3725943117728742711}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5491917616038263235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -193,11 +259,25 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5482829108552818844, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5457672822293192232}
+    - targetCorrespondingSourceObject: {fileID: 5482829108552818844, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7879731289827381565}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3837402756167851688, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
       insertIndex: 3
       addedObject: {fileID: -9190908638390831443}
   m_SourcePrefab: {fileID: 100100000, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+--- !u!114 &493206594145118964 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -75509600174827569, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+  m_PrefabInstance: {fileID: 8659160548267851067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5578471037867762579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a17c49a78c4145ddbeb580dc1b4a80cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Combat.Health
 --- !u!4 &3764279923978706343 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5482829108552818844, guid: 011bf576784804848af66b22b4bc94fe, type: 3}

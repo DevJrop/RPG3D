@@ -79,7 +79,12 @@ namespace Recourses
 
         public float GetPercentage()
         {
-            return 100 * healthPoints / GetComponent<BaseStats>().GetStat(Stat.Health);
+            return 100 * GetFraction();
+        }
+
+        public float GetFraction()
+        {
+            return healthPoints / GetComponent<BaseStats>().GetStat(Stat.Health);
         }
 
         private void Die()

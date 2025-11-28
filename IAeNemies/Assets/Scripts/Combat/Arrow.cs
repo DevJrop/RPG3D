@@ -2,6 +2,7 @@ using System;
 using Core;
 using Recourses;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Combat
 {
@@ -13,6 +14,7 @@ namespace Combat
         [SerializeField] private bool isHoming = true;
         [SerializeField] private GameObject hitEffect = null;
         [SerializeField] private float maxLifeTime = 3f;
+        [SerializeField] private UnityEvent onHit; 
         GameObject instigator = null;
 
         private void Start()
@@ -51,6 +53,7 @@ namespace Combat
 
         private void OnTriggerEnter(Collider other)
         {
+            onHit.Invoke();
             if (other.GetComponent<Health>() != target) return;
             if (target.IsDead()) return;
             target.TakeDamage(instigator,damage);

@@ -239,6 +239,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6172998858925117633, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+      propertyPath: Priority
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172998858925117633, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c1cb9351625ce034a804de9e9c8da8bb, type: 3}
+    - target: {fileID: 6172998858925117633, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+      propertyPath: rolloffMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172998858925117633, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].time
+      value: 0.06251636
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172998858925117633, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].value
+      value: 0.86408997
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172998858925117633, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].inSlope
+      value: -1.002004
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172998858925117633, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].inWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172998858925117633, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].inWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172998858925117633, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].outSlope
+      value: -1.002004
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172998858925117633, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].outWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172998858925117633, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].outWeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6598419025036473370, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
       propertyPath: m_Speed
       value: 3

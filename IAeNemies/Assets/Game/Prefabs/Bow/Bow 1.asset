@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Bow 1
   m_EditorClassIdentifier: Assembly-CSharp::Weapon
   animatorOverride: {fileID: 22100000, guid: 26fb0608d28dbd04b8781134f3933305, type: 2}
-  weaponPrefab: {fileID: 8603269689354030320, guid: 7aebe1642d1b94b4ba46ed0b694c2251, type: 3}
+  weaponPrefab: {fileID: 6906887252873289035, guid: 7aebe1642d1b94b4ba46ed0b694c2251, type: 3}
   weaponRange: 20.4
   weaponDamage: 3
+  percentageBonus: 0
   isRightHanded: 0
   projectile: {fileID: 5089757289835058292, guid: d8af0a8ac4c7988468e77facc8b4094b, type: 3}

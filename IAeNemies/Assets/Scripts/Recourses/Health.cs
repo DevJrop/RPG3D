@@ -9,7 +9,8 @@ namespace Recourses
     public class Health : MonoBehaviour
     {
         [SerializeField] private float regenerationPercentage = 70;
-        [SerializeField] private UnityEvent<float> takeDamage;  
+        [SerializeField] private UnityEvent<float> takeDamage;
+        [SerializeField] private UnityEvent onDie;
         float healthPoints = -1f;
         bool isDead = false;
 
@@ -39,6 +40,7 @@ namespace Recourses
             
             if (healthPoints == 0)
             {
+                onDie.Invoke();
                 Die();
                 AwardExperience(instigator);
             }

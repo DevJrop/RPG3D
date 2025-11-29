@@ -193,7 +193,7 @@ PrefabInstance:
       objectReference: {fileID: 9170232344984340935}
     - target: {fileID: 2368411966789933343, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
       propertyPath: timeBetweenAttacks
-      value: 1.9
+      value: 2.57
       objectReference: {fileID: 0}
     - target: {fileID: 3837402756167851688, guid: 011bf576784804848af66b22b4bc94fe, type: 3}
       propertyPath: m_Name

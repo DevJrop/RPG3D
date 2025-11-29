@@ -13,6 +13,7 @@ namespace Combat
         [SerializeField] float percentageBonus = 0f;
         [SerializeField] private bool isRightHanded = true;
         [SerializeField] Arrow projectile;
+        private WeaponConfig weaponConfig;
 
         public void Spawn(Transform rightHand, Transform leftHand, Animator animator)
         {
@@ -53,6 +54,7 @@ namespace Combat
         {
             return weaponDamage;
         }
+        
 
         public float GetPercentageBonus()
         {

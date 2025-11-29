@@ -17,6 +17,7 @@ namespace Combat
         [SerializeField] Weapon weapon = null;
         private float timeSinceLastAttack = Mathf.Infinity;
         Health target;
+        WeaponConfig config;
 
         private void Start()
         {
@@ -87,6 +88,7 @@ namespace Combat
         void Shoot()
         {
             Hit();
+            
         }
         private bool GetIsInRange()
         {

@@ -70,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 7114199630971333279}
     - target: {fileID: 6410256699669128228, guid: 98c1c0d770104394193214a28cc58fd0, type: 3}
       propertyPath: timeBetweenAttacks
-      value: 2.57
+      value: 3.67
       objectReference: {fileID: 0}
     - target: {fileID: 7639569367383069389, guid: 98c1c0d770104394193214a28cc58fd0, type: 3}
       propertyPath: maxSpeed
